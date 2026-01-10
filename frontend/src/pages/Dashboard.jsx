@@ -129,7 +129,7 @@ const Dashboard = () => {
         <div>
           <h1 className="text-2xl font-semibold text-foreground">Dashboard</h1>
           <p className="text-muted-foreground mt-1">
-            Welcome back, {currentUser.name}. Here's your collections overview.
+            Welcome back, {currentUser.name}. Here&apos;s your collections overview.
           </p>
         </div>
         <div className="flex items-center gap-2">
