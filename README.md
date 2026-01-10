@@ -13,7 +13,7 @@
 
 CollectHub is an enterprise-grade, responsive UI prototype that centralizes case allocation, tracks SOP-driven workflows & SLAs, improves recovery accountability, provides real-time dashboards, and enables structured collaboration with external Debt Collection Agencies (DCAs).
 
-> **Note:** This is a **UI prototype** with mock data. No backend integration is included - all data is generated client-side for demonstration purposes.
+> **Note:** This is a **UI prototype** with mock data. No backend integration is included - all data is generated client-side for demonstration purposes, live demo link : https://agent-69623928f1a870cef06b6f89--collection-hu.netlify.app/ .
 
 ---
 
