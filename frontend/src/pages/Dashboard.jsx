@@ -247,21 +247,7 @@ const Dashboard = () => {
                   <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" horizontal={false} />
                   <XAxis type="number" axisLine={false} tickLine={false} tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 12 }} />
                   <YAxis type="category" dataKey="stage" axisLine={false} tickLine={false} tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 12 }} width={90} />
-                  <RechartsTooltip
-                    content={({ active, payload }) => {
-                      if (active && payload && payload.length) {
-                        const data = payload[0].payload;
-                        return (
-                          <div className="bg-popover border border-border rounded-lg shadow-lg p-3">
-                            <p className="font-medium mb-1">{data.stage}</p>
-                            <p className="text-sm text-muted-foreground">{data.count} cases</p>
-                            <p className="text-sm font-medium text-primary">{formatCurrency(data.amount)}</p>
-                          </div>
-                        );
-                      }
-                      return null;
-                    }}
-                  />
+                  <RechartsTooltip content={FunnelTooltipContent} />
                   <Bar dataKey="count" radius={[0, 4, 4, 0]}>
                     {funnelData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
