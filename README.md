@@ -55,7 +55,9 @@ Think of CollectHub as:
 > _(Backend & AI ready — UI currently implemented)_
 
 ### 📐 Architecture Diagram
-![Architecture Diagram](./docs/images/architecture.png)
+
+<img width="2816" height="1536" alt="Gemini_Generated_Image_xfohjfxfohjfxfoh" src="https://github.com/user-attachments/assets/23dbbdc6-11cd-4573-af9e-7d983a77f6f6" />
+
 
 **Layers**
 - **Presentation Layer**: React + Tailwind + shadcn/ui
@@ -69,13 +71,15 @@ Think of CollectHub as:
 ## 🔄 End-to-End System Flow
 
 ### 📊 System Flow Diagram
-![System Flow](./docs/images/system_flow.png)
+
+<img width="2816" height="1536" alt="Gemini_Generated_Image_26l1ss26l1ss26l1" src="https://github.com/user-attachments/assets/908172b4-a497-4ba5-b912-4f46c245fd94" />
 
 1. Overdue accounts ingested from billing/ERP
 2. AI models score each case
 3. Cases prioritized and allocated to DCAs
 4. DCAs execute actions via structured portal
-5. SLA engine monitors progress
+5. SLA engine monitors progress 
+
 6. Escalations triggered automatically
 7. Outcomes feed back into models
 
@@ -84,7 +88,8 @@ Think of CollectHub as:
 ## 🤖 AI & ML Intelligence (Planned + MVP-ready)
 
 ### 📈 ML Pipeline Diagram
-![ML Pipeline](./docs/images/ml_pipeline.png)
+
+<img width="2816" height="1536" alt="Gemini_Generated_Image_o9ejc0o9ejc0o9ej" src="https://github.com/user-attachments/assets/7bf122d3-ade1-4882-9ae6-cad3d98709d3" />
 
 ### Model 1 — Recovery Probability (Classification)
 **Goal:** Predict probability that a case will be recovered within a defined horizon.
@@ -144,6 +149,7 @@ Buckets:
 ## 🧮 Allocation Algorithm (Case → Best DCA)
 
 Instead of equal distribution, CollectHub uses **optimization-based assignment**.
+
 
 **Inputs**
 - case recovery score
