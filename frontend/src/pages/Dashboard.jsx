@@ -122,27 +122,6 @@ const Dashboard = () => {
     'hsl(199, 89%, 48%)'
   ];
 
-  const CustomTooltip = ({ active, payload, label }) => {
-    if (active && payload && payload.length) {
-      return (
-        <div className="bg-popover border border-border rounded-lg shadow-lg p-3">
-          <p className="text-sm font-medium mb-2">{label}</p>
-          {payload.map((entry, index) => (
-            <div key={index} className="flex items-center gap-2 text-sm">
-              <div
-                className="w-3 h-3 rounded-sm"
-                style={{ backgroundColor: entry.color }}
-              />
-              <span className="text-muted-foreground">{entry.name}:</span>
-              <span className="font-medium">{formatCurrency(entry.value)}</span>
-            </div>
-          ))}
-        </div>
-      );
-    }
-    return null;
-  };
-
   return (
     <div className="space-y-6">
       {/* Header */}
