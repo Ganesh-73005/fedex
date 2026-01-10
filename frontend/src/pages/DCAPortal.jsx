@@ -77,7 +77,7 @@ const DCAPortal = () => {
   const assignedCases = useMemo(() => 
     cases.filter(c => c.assigned_dca_id === currentDCA.dca_id && c.stage !== 'Closed')
       .sort((a, b) => new Date(a.sla_deadline) - new Date(b.sla_deadline)),
-    []
+    [currentDCA.dca_id]
   );
 
   const urgentCases = assignedCases.filter(c => {
