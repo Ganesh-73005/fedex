@@ -35,7 +35,7 @@ The **Dashboard** is the central command center for collections managers and exe
 ---
 
 ### 2. Cases List
-![Cases List](./frontend/public/screenshots/cases-list.png)
+![Cases List](./frontend/public/screenshots/case.png)
 
 The **Cases List** is the primary workspace for managing collection cases. Features include:
 
@@ -54,7 +54,7 @@ The **Cases List** is the primary workspace for managing collection cases. Featu
 ---
 
 ### 3. Case Detail
-![Case Detail](./frontend/public/screenshots/case-detail.png)
+![Case Detail](./frontend/public/screenshots/cases.png)
 
 The **Case Detail** page provides comprehensive information about a single collection case:
 
@@ -89,7 +89,7 @@ The **Allocation Workbench** enables drag-and-drop case distribution across DCAs
 ---
 
 ### 5. DCA Portal
-![DCA Portal](./frontend/public/screenshots/dca-portal.png)
+![DCA Portal](./frontend/public/screenshots/dcaportal.png)
 
 The **DCA Portal** is a simplified view for debt collection agency partners:
 
@@ -107,7 +107,7 @@ The **DCA Portal** is a simplified view for debt collection agency partners:
 ---
 
 ### 6. Compliance & Audit
-![Compliance & Audit](./frontend/public/screenshots/compliance.png)
+![Compliance & Audit](./frontend/public/screenshots/compilance.png)
 
 The **Compliance & Audit** page provides oversight and regulatory tracking:
 
