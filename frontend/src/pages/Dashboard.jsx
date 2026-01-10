@@ -24,6 +24,41 @@ const formatCurrency = (value) => {
   return `\u20B9${value}`;
 };
 
+const CustomChartTooltip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className="bg-popover border border-border rounded-lg shadow-lg p-3">
+        <p className="text-sm font-medium mb-2">{label}</p>
+        {payload.map((entry, index) => (
+          <div key={index} className="flex items-center gap-2 text-sm">
+            <div
+              className="w-3 h-3 rounded-sm"
+              style={{ backgroundColor: entry.color }}
+            />
+            <span className="text-muted-foreground">{entry.name}:</span>
+            <span className="font-medium">{formatCurrency(entry.value)}</span>
+          </div>
+        ))}
+      </div>
+    );
+  }
+  return null;
+};
+
+const FunnelTooltipContent = ({ active, payload }) => {
+  if (active && payload && payload.length) {
+    const data = payload[0].payload;
+    return (
+      <div className="bg-popover border border-border rounded-lg shadow-lg p-3">
+        <p className="font-medium mb-1">{data.stage}</p>
+        <p className="text-sm text-muted-foreground">{data.count} cases</p>
+        <p className="text-sm font-medium text-primary">{formatCurrency(data.amount)}</p>
+      </div>
+    );
+  }
+  return null;
+};
+
 const Dashboard = () => {
   const { currentUser } = useApp();
 
