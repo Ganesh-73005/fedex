@@ -217,7 +217,7 @@ const Dashboard = () => {
                   <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" vertical={false} />
                   <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 12 }} />
                   <YAxis axisLine={false} tickLine={false} tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 12 }} tickFormatter={(v) => `${v / 1000}K`} />
-                  <RechartsTooltip content={<CustomTooltip />} />
+                  <RechartsTooltip content={CustomChartTooltip} />
                   <Area type="monotone" dataKey="0-30" name="0-30 days" stroke="hsl(217, 91%, 45%)" fill="url(#color030)" strokeWidth={2} />
                   <Area type="monotone" dataKey="31-60" name="31-60 days" stroke="hsl(142, 71%, 45%)" fill="url(#color3160)" strokeWidth={2} />
                   <Area type="monotone" dataKey="61-90" name="61-90 days" stroke="hsl(38, 92%, 50%)" fill="url(#color6190)" strokeWidth={2} />
