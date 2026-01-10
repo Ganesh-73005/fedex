@@ -86,7 +86,7 @@ const CaseDetail = () => {
     return (
       <div className="flex flex-col items-center justify-center h-[60vh]">
         <h2 className="text-xl font-semibold">Case not found</h2>
-        <p className="text-muted-foreground mt-2">The case you're looking for doesn't exist.</p>
+        <p className="text-muted-foreground mt-2">The case you&apos;re looking for doesn&apos;t exist.</p>
         <Button className="mt-4" onClick={() => navigate('/cases')}>Back to Cases</Button>
       </div>
     );
